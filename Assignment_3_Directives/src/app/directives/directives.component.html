@@ -1,0 +1,16 @@
+<p>Directives works!</p>
+
+<button
+    class = "btn btn-primary" (click)= "Numbering()"> Display Details </button>
+    
+    
+    <p *ngIf="showSecret"> The Road Not taken By Ruskin Bond
+         </p>
+    <div *ngFor ="let logItem of log" [ngStyle]="{backgroundColor:logItem >= 5 ? 'blue' : 'white'}" 
+    [ngClass]="{whitetext: logItem >=5}"> {{logItem}} </div>
+    
+    
+         
+    
+    
+    
